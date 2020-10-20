@@ -1,0 +1,47 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: beer-service
+  jpa:
+    show-sql: false
+    properties:
+      hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+    initialization-mode: EMBEDDED
+  h2:
+    console:
+      enabled: true
+  # Cache Setup
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  output:
+    ansi:
+      enabled: detect
+  # ActiveMQ-Artemis
+  artemis:
+    user: artemis
+    password: simetraehcapa
+# Service Properties
+sfg:
+  brewery:
+    beer-inventory-service-host: http://localhost:8083
+#logging:
+logging:
+  level:
+    guru:
+      sfg: debug
+#    org.hibernate:
+#        sql: DEBUG
+#        type:
+#          descriptor:
+#            sql:
+#              BasicBinder: TRACE
+#    com.zaxxer.hikari:
+#      HikariConfig: DEBUG
