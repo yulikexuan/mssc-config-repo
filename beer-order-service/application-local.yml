@@ -7,9 +7,9 @@ spring:
       hibernate.dialect: org.hibernate.dialect.PostgreSQL10Dialect
   datasource:
     initialization-mode: always
-    url: jdbc:postgresql://localhost:5432/beerservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:postgresql://localhost:5432/beer_order_service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     driver-class-name: org.postgresql.Driver
-    username: beer_service_guru
+    username: beer_order_service_guru
     password: password
     hikari:
       maximum-pool-size: 3
@@ -25,6 +25,3 @@ spring:
         cacheServerConfiguration: true
         elideSetAutoCommits: true
         maintainTimeStats: false
-feign:
-  hystrix:
-    enabled: true
