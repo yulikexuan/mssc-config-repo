@@ -4,7 +4,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/beer_inventory_service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     driver-class-name: org.postgresql.Driver
     username: beer_inventory_service_guru
-    password: {cipher}f565b94774ad31bbf6c817ea5b1db1595582a00745c40b9f687bafd281a62933
+    password: "{cipher}f565b94774ad31bbf6c817ea5b1db1595582a00745c40b9f687bafd281a62933"
     hikari:
       maximum-pool-size: 3
       minimum-idle: 1
@@ -21,4 +21,4 @@ spring:
         maintainTimeStats: false
   artemis:
     user: artemis
-    password: {cipher}cb06ee1d8b39b83855b818d671094aa53f2bcf667f1ece939a06170235eb350e
+    password: "{cipher}cb06ee1d8b39b83855b818d671094aa53f2bcf667f1ece939a06170235eb350e"
