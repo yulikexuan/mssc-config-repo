@@ -1,0 +1,3 @@
+artemis:
+  user: artemis
+  password: "{cipher}cb06ee1d8b39b83855b818d671094aa53f2bcf667f1ece939a06170235eb350e"
