@@ -29,3 +29,5 @@ spring:
         cacheServerConfiguration: true
         elideSetAutoCommits: true
         maintainTimeStats: false
+  zipkin:
+    base-url: http://zipkin:9411
