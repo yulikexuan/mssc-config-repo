@@ -25,6 +25,8 @@ spring:
         cacheServerConfiguration: true
         elideSetAutoCommits: true
         maintainTimeStats: false
+  zipkin:
+    base-url: http://zipkin:9411
 sfg:
   brewery:
     beer-service-host: http://beer-service:8081
