@@ -1,0 +1,4 @@
+spring:
+  zipkin:
+    # Use DNS defined by docker-compose
+    base-url: http://zipkin:9411
